@@ -1,0 +1,46 @@
+/* Background identical to screenshot */
+body {
+  margin: 0;
+  background: #f5f5f5;     /* same very light grey background */
+  font-family: Arial, sans-serif;
+}
+
+/* Wrapper to center the whole block horizontally */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;       /* same empty space above the grid */
+}
+
+/* GRID: 4 columns, 2 rows exactly like screenshot */
+.container {
+  width: 900px;             /* fixed width so it doesn’t stretch */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;                /* equal spacing between cards */
+  background: #f5f5f5;
+}
+
+/* Card look: identical border + padding */
+.card {
+  width: 200px;
+  text-align: center;
+  background: white;
+  border: 1px solid #cfcfcf;
+  padding: 8px;
+}
+
+/* Image identical size + border */
+.card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 1px solid #cccccc;
+}
+
+/* Caption EXACT style */
+.card p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
